@@ -1,0 +1,16 @@
+/home:
+  get:
+    description: 获取用户信息
+    input: user.yaml
+    output: user.yaml
+  /:uid:
+    get:
+      controller: ''
+      description:
+    delete:
+      description:
+    post:
+      description:
+    put:
+      description:
+
