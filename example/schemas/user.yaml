@@ -1,0 +1,29 @@
+keys:
+  username:
+    type: string
+    alphanum: true
+    min: 6
+    max: 12
+    required: true
+  email:
+    type: string
+    email:
+  password:
+    type: string
+    alphanum: true
+    min: 6
+    max: 12
+  token:
+    type: string
+  age:
+    type: number
+  sex:
+    type: boolean
+
+with:
+  - username
+  - password
+
+without:
+  - username
+  - token
