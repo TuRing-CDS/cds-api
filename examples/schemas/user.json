@@ -1,0 +1,13 @@
+{
+    "title":"User",
+    "description":"A User From xxxx",
+    "type":"object",
+    "properties":{
+        "id":{
+            "description":"用户ID",
+            "type":"string",
+            "enum":["01","02"]
+        }
+    },
+    "required":["id"]
+}

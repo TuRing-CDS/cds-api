@@ -1,6 +1,0 @@
-uname:
-  type: string
-  alphanum: true
-  min: 6
-  max: 12
-  required: true
