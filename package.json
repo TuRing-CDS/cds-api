@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/TuRing-CDS/cds-api#readme",
   "dependencies": {
+    "ejs": "^2.5.6",
     "jsonschema": "^1.1.1",
+    "path-to-regexp": "^1.7.0",
     "raml-1-parser": "^1.1.15"
   }
 }

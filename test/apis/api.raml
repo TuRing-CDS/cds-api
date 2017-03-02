@@ -21,18 +21,16 @@ resourceTypes:
 
 /home:
   get:
-    queryParameters: 
+    description: 描述
+    queryParameters:
       type: number
-    body:
-      application/json:
-        schema: user
-    responses: 
+    responses:
       200:
-        body: 
+        body:
           application/json:
             schema: user
       201:
-        body: 
+        body:
           application/json:
             schema: user
   /user:
@@ -50,3 +48,10 @@ resourceTypes:
         body:
           application/json:
             schema: user
+      /:something:
+        get:
+          body:
+            application/json:
+              schema: user
+    /aaa:
+      get:

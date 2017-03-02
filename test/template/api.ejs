@@ -1,0 +1,16 @@
+/**
+    <%= router.path%>
+    <%= description%>
+ */
+module.exports.<%=controller.method%> = async function(params){
+    <%let item = router.checkOuts && router.checkOuts['200'] %>
+    <%if(!!item){%>
+        let Mock = require('mockjs');
+        return Mock.mock({
+            <%Object.keys(item.properties).forEach((key)=>{%>
+            <%let subItem = item.properties[key]%>
+                '<%=key%>':Mock.mock('@<%=subItem.type%>(<%=subItem.minLength||6%>,<%=subItem.maxLength||12%>)'),
+            <%})%>
+        })
+    <%}%>
+}
