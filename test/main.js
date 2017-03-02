@@ -13,8 +13,8 @@ api.load(path.join(__dirname, './apis/api.raml'));
 
 // api.developController(template);
 
-api.invoke('GET /home/user/1000/eat', {aaa: 'aaaa', id: '01', uname: 'iamee'}, (err, result, code) => {
-    console.log(err, result, code)
+api.invoke('GET /home', {aaa: 'aaaa', id: '01', uname: 'iamee'}, (err, result, code) => {
+    console.log(code)
     if (err) {
         console.error(err);
     }
