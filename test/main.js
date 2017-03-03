@@ -11,12 +11,12 @@ api.load(path.join(__dirname, './apis/api.raml'));
 
 // api.removeController(path.join(__dirname,'controllers'));
 
-api.developController(template);
+// api.developController(template);
 
 api.invoke('GET /home', {aaa: 'aaaa', id: '023', uname: 'iamee'}, (err, result, code) => {
     console.log(code)
     if (err) {
-        console.error("==>",err);
+        console.error("==>", err);
     }
     if (result) {
         console.log(result);
