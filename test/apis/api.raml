@@ -23,7 +23,12 @@ resourceTypes:
   get:
     description: 描述
     queryParameters:
-      type: number
+      uname:
+        type: string
+        maxLength: 20
+        minLength: 5
+        enum: ['Hello','GOGOGO']
+        required: true
     responses:
       200:
         body:
