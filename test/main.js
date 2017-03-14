@@ -13,12 +13,14 @@ api.load(path.join(__dirname, './apis/api.raml'));
 
 // api.developController(template);
 
-api.invoke('GET /home', {aaa: 'aaaa', id: '023',uname:'Hello'}, (err, result, code) => {
-    console.log(code)
-    if (err) {
-        console.error("==>", err);
-    }
-    if (result) {
-        console.log(result);
-    }
-})
+setInterval(()=>{
+    api.invoke('GET /home', {aaa: 'aaaa', id: '023',uname:'Hello'}, (err, result, code) => {
+        console.log(code)
+        if (err) {
+            console.error("==>", err);
+        }
+        if (result) {
+            console.log(result);
+        }
+    })
+},1000)
