@@ -7,6 +7,7 @@ const path = require('path');
 const api = new Api();
 const fs = require('fs');
 const template = fs.readFileSync(path.join(__dirname, 'template', 'api.ejs')).toString();
+// api.load(path.join(__dirname, './apis/api.raml'),path.join(__dirname,'./controllers'));
 api.load(path.join(__dirname, './apis/api.raml'));
 
 // api.removeController(path.join(__dirname,'controllers'));
