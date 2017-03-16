@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "userName": {
+      "type": "string",
+      "maxLength": 12,
+      "minLength": 6,
+      "required": true
+    },
+    "nickName": {
+      "type": "string",
+      "maxLength": 12,
+      "minLength": 6,
+      "required": true
+    }
+  }
+}
