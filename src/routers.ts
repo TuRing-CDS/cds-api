@@ -42,6 +42,8 @@ export class Router {
      */
     private controllerPath: string;
 
+    private middleware: Function[] = [];
+
     /**
      * 构造方法
      * @param method
@@ -135,5 +137,11 @@ export class Router {
             response.error = new Error(`${method} ${uri} Not Found`);
         }
         return response;
+    }
+
+    use(fn: Function) {
+        if ('function' === typeof fn) {
+            this.middleware.push(fn);
+        }
     }
 }
