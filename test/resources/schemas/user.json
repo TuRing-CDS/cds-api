@@ -1,16 +1,13 @@
 {
+  "title": "User Schema",
   "type": "object",
   "properties": {
-    "userName": {
+    "id": {
       "type": "string",
-      "maxLength": 12,
-      "minLength": 6,
       "required": true
     },
-    "nickName": {
+    "userName": {
       "type": "string",
-      "maxLength": 12,
-      "minLength": 6,
       "required": true
     }
   }

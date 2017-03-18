@@ -1,12 +1,10 @@
 /**
- * Created by Z on 2017-03-16.
+ * Created by Z on 2017-03-18.
  */
-const Api = require('../').Api;
-
-const api = new Api();
+const Api = require('../dist/api').Api;
 
 const path = require('path');
 
-api.load(path.join(__dirname, "./apis/public.raml"));
+const api = new Api();
 
 module.exports = api;
